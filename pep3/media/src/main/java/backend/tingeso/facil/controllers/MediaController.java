@@ -17,10 +17,13 @@ public class MediaController {
     @GetMapping
     public ResponseEntity<ArrayList<MediaEntity>> listadoProblemas(){
         ArrayList<MediaEntity> listaProblemas = mediaService.obtenerData();
-        if(listaProblemas.isEmpty()){
+        ArrayList<MediaEntity> problemasFinal = mediaService.seleccion(listaProblemas);
+        System.out.println(problemasFinal);
+        System.out.println(problemasFinal);
+        if(problemasFinal.isEmpty()){
             return ResponseEntity.noContent().build();
         }
-        return ResponseEntity.ok(listaProblemas);
+        return ResponseEntity.ok(problemasFinal);
     }
     @PostMapping
     public void guardarEmpleado(@RequestBody MediaEntity quiz){

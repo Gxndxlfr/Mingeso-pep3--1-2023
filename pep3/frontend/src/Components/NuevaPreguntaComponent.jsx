@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import NavbarComponent from "./NavbarComponent";
+import NavbarComponent from "./NavbarComponent2";
 import styled from "styled-components";
 import UploadPreguntaFacil from "../services/UploadPreguntaFacil";
 import UploadPreguntaMedia from "../services/UploadPreguntaMedia";
@@ -69,7 +69,7 @@ export default function NuevaPreguntaComponent(props){
         }).then(respuesta=>{
             if(respuesta){
                 swal("Pregunta agregada correctamente!", {icon: "success", timer: "3000"});
-                let quiz = { codigo: input.codigo, pregunta: input.pregunta, respuesta: input.respuesta};
+                let quiz = { codigo: input.codigo, enunciado: input.pregunta, respuesta: input.respuesta};
                 console.log(input.codigo)
                 console.log(input.pregunta)
                 console.log(input.respuesta)
@@ -96,7 +96,7 @@ export default function NuevaPreguntaComponent(props){
         }).then(respuesta=>{
             if(respuesta){
                 swal("Pregunta agregada correctamente!", {icon: "success", timer: "3000"});
-                let quiz = { codigo: input.codigo, pregunta: input.pregunta, respuesta: input.respuesta};
+                let quiz = { codigo: input.codigo, enunciado: input.pregunta, respuesta: input.respuesta};
                 console.log(input.codigo)
                 console.log(input.pregunta)
                 console.log(input.respuesta)
@@ -123,7 +123,7 @@ export default function NuevaPreguntaComponent(props){
         }).then(respuesta=>{
             if(respuesta){
                 swal("Pregunta agregada correctamente!", {icon: "success", timer: "3000"});
-                let quiz = { codigo: input.codigo, pregunta: input.pregunta, respuesta: input.respuesta};
+                let quiz = { codigo: input.codigo, enunciado: input.pregunta, respuesta: input.respuesta};
                 console.log(input.codigo)
                 console.log(input.pregunta)
                 console.log(input.respuesta)

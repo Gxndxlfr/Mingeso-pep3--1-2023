@@ -17,10 +17,14 @@ public class FacilController {
     @GetMapping
     public ResponseEntity<ArrayList<FacilEntity>> listadoProblemas(){
         ArrayList<FacilEntity> listaProblemas = facilService.obtenerData();
-        if(listaProblemas.isEmpty()){
+
+        ArrayList<FacilEntity> problemasFinal = facilService.seleccion(listaProblemas);
+
+        System.out.println(problemasFinal);
+        if(problemasFinal.isEmpty()){
             return ResponseEntity.noContent().build();
         }
-        return ResponseEntity.ok(listaProblemas);
+        return ResponseEntity.ok(problemasFinal);
     }
     @PostMapping
     public void guardarEmpleado(@RequestBody FacilEntity quiz){

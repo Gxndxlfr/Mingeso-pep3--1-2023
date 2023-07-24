@@ -17,10 +17,12 @@ public class DificilController {
     @GetMapping
     public ResponseEntity<ArrayList<DificilEntity>> listadoProblemas(){
         ArrayList<DificilEntity> listaProblemas = dificilService.obtenerData();
-        if(listaProblemas.isEmpty()){
+
+        ArrayList<DificilEntity> problemasFinal = dificilService.seleccion(listaProblemas);
+        if(problemasFinal.isEmpty()){
             return ResponseEntity.noContent().build();
         }
-        return ResponseEntity.ok(listaProblemas);
+        return ResponseEntity.ok(problemasFinal);
     }
     @PostMapping
     public void guardarEmpleado(@RequestBody DificilEntity quiz){
