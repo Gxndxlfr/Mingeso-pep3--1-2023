@@ -32,3 +32,7 @@ spring:
           uri: lb://media
           predicates:
             - Path=/media/**
+        - id: dificil
+          uri: lb://dificil
+          predicates:
+            - Path=/dificil/**
