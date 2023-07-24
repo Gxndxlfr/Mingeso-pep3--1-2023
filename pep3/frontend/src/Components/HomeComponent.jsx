@@ -1,14 +1,32 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import { createGlobalStyle } from 'styled-components'
+import gif from "../gif/monkey.gif";
+import gif2 from "../gif/9vry.gif";
 
 
 export default function HomeComponent() {
-  
+ 
   const ComenzarFacil = () => {
     localStorage.setItem("puntaje", 0);
     localStorage.setItem("restantes", 4);
     window.location.href = "/prueba-facil";
+  };
+
+  const ComenzarMedia = () => {
+    localStorage.setItem("puntaje", 0);
+    localStorage.setItem("restantes", 4);
+    window.location.href = "/prueba-media";
+  };
+
+  const ComenzarDificil = () => {
+    localStorage.setItem("puntaje", 0);
+    localStorage.setItem("restantes", 4);
+    window.location.href = "/prueba-dificil";
+  };
+
+  const AgregarPregunta = () => {
+    window.location.href = "/agregar-pregunta"
   };
 
   return (
@@ -23,6 +41,7 @@ export default function HomeComponent() {
               <u>¡Bienvenido a CodeChallenger!</u>
             </i>
           </b>
+          <img src={gif} alt="Animación GIF" className="gif" />
         </h1>
         <h3 className="text-center">
           {" "}
@@ -54,7 +73,7 @@ export default function HomeComponent() {
             Para aquellos que ya tienen conocimientos en Python y quieren poner
             a prueba sus habilidades con desafios de dificultad media.
           </h3>
-          <button type="button" class="btn btn-primary">
+          <button type="button" class="btn btn-primary" onClick={ComenzarMedia}>
             Comenzar
           </button>
         </div>
@@ -66,7 +85,7 @@ export default function HomeComponent() {
           <h3>
             Para aquellos expertos en Python que buscan los mayores desafios.
           </h3>
-          <button type="button" class="btn btn-primary">
+          <button type="button" class="btn btn-primary" onClick={ComenzarDificil}>
             Comenzar
           </button>
         </div>
@@ -80,7 +99,7 @@ export default function HomeComponent() {
             ¿Has creado un desafio y quieres ver como otros se enfrentan a el?
             Accede a esta opción para agregar a un nuevo desafio.
           </h3>
-          <button type="button" class="btn btn-primary">
+          <button type="button" class="btn btn-primary" onClick={AgregarPregunta}> 
             Acceder
           </button>
         </div>
@@ -91,12 +110,21 @@ export default function HomeComponent() {
 }
 
 const GlobalStyle = createGlobalStyle`
-body {
-    background-color: #9E0F20;
-}
+  body {
+    margin: 0; /* Eliminamos los márgenes para evitar desplazamiento */
+    padding: 0; /* Eliminamos el padding para evitar desplazamiento */
+  }
 `;
 
 const HomeStyle = styled.nav`
+position: relative; /* Importante para que el gif2 sea el fondo del componente */
+  background-image: url(${gif2}); /* Utilizamos gif2 como fondo */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh; /* Asegura que el componente ocupe al menos el 100% de la altura de la ventana */
+  overflow: hidden; /* Evita que el contenido del componente desborde si es más grande que la pantalla */
+
 .text-center {
     justify-content: center;
     display: flex;
@@ -160,5 +188,13 @@ const HomeStyle = styled.nav`
     width: 60%;
     margin: auto;
     border: 5px solid #FDFEFE;
+}
+
+.gif {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  width: 1cm; /* Tamaño de carnet en centímetros */
+  height: 1cm; /* Tamaño de carnet en centímetros */
 }
 `;

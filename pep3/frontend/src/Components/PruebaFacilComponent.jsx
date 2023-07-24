@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Preguntas from "./PreguntasComponent";
 import styled from "styled-components";
 import Navbar from "./NavbarComponent";
+import gif from "../gif/monkey.gif"; // Asegúrate de proporcionar la ruta correcta del GIF
 
 class PruebaFacilComponent extends Component {
   constructor(props) {
@@ -36,7 +37,9 @@ class PruebaFacilComponent extends Component {
               resp={datas.respuesta}
             ></Preguntas>
           ))}
+          
         </div>
+        <img src={gif} alt="Animación GIF" className="gif" />
       </HomeStyle>
     );
   }
@@ -44,19 +47,25 @@ class PruebaFacilComponent extends Component {
 
 export default PruebaFacilComponent;
 
-
 const HomeStyle = styled.nav`
-.text-center {
+  .text-center {
     justify-content: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #FDFEFE;
-}
-.asd{
+    color: #fdfefe;
+  }
+
+  .asd {
     padding-top: 10px;
     padding-bottom: 30px;
+  }
 
-}
-
-`
+  .gif {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    width: 1cm; /* Tamaño de carnet en centímetros */
+    height: 1cm; /* Tamaño de carnet en centímetros */
+  }
+`;

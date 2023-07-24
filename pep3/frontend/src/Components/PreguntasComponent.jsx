@@ -4,6 +4,7 @@ import { createGlobalStyle } from "styled-components";
 import { CodeBlock, dracula } from "react-code-blocks";
 import Form from "react-bootstrap/Form";
 import add_to_puntaje from "./Puntaje";
+import gif from "../gif/monkey.gif"; // Asegúrate de proporcionar la ruta correcta del GIF
 
 export default function PreguntasComponent({ id, enunciado, code, resp }) {
   const initialState = {
@@ -81,6 +82,8 @@ export default function PreguntasComponent({ id, enunciado, code, resp }) {
           )}
         </div>
         <hr></hr>
+        
+        <img src={gif} alt="Animación GIF" className="gif" />
       </HomeStyle>
     </div>
   );
@@ -125,5 +128,13 @@ button:hover {
     background-color: #e2f1f8;
     color: #ffbc0e;
     transform: scale(1.1);
+}
+
+.gif {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  width: 3cm; /* Tamaño de carnet en centímetros */
+  height: 3cm; /* Tamaño de carnet en centímetros */
 }
 `;

@@ -16,4 +16,8 @@ public class DificilService {
     public ArrayList<DificilEntity> obtenerData(){
         return (ArrayList<DificilEntity>) dificilRepository.findAll();
     }
+
+    public void guardarPregunta(DificilEntity quiz) {
+        dificilRepository.save(quiz);
+    }
 }

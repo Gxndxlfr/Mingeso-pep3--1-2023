@@ -16,4 +16,7 @@ public class MediaService {
     public ArrayList<MediaEntity> obtenerData(){
         return (ArrayList<MediaEntity>) mediaRepository.findAll();
     }
+    public void guardarPregunta(MediaEntity quiz) {
+        mediaRepository.save(quiz);
+    }
 }

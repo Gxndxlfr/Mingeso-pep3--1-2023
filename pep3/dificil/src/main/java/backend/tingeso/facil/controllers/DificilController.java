@@ -4,9 +4,7 @@ import backend.tingeso.facil.entities.DificilEntity;
 import backend.tingeso.facil.services.DificilService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 
@@ -23,5 +21,10 @@ public class DificilController {
             return ResponseEntity.noContent().build();
         }
         return ResponseEntity.ok(listaProblemas);
+    }
+    @PostMapping
+    public void guardarEmpleado(@RequestBody DificilEntity quiz){
+
+        dificilService.guardarPregunta(quiz);
     }
 }
