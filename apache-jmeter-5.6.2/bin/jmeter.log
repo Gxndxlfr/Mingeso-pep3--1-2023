@@ -1,0 +1,29 @@
+2023-07-24 03:16:51,810 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2023-07-24 03:16:51,844 INFO o.a.j.JMeter: Loading user properties from: user.properties
+2023-07-24 03:16:51,845 INFO o.a.j.JMeter: Loading system properties from: system.properties
+2023-07-24 03:16:51,852 INFO o.a.j.JMeter: Copyright (c) 1998-2023 The Apache Software Foundation
+2023-07-24 03:16:51,852 INFO o.a.j.JMeter: Version 5.6.2
+2023-07-24 03:16:51,853 INFO o.a.j.JMeter: java.version=17.0.2
+2023-07-24 03:16:51,853 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2023-07-24 03:16:51,853 INFO o.a.j.JMeter: os.name=Windows 11
+2023-07-24 03:16:51,853 INFO o.a.j.JMeter: os.arch=amd64
+2023-07-24 03:16:51,853 INFO o.a.j.JMeter: os.version=10.0
+2023-07-24 03:16:51,853 INFO o.a.j.JMeter: file.encoding=Cp1252
+2023-07-24 03:16:51,854 INFO o.a.j.JMeter: java.awt.headless=null
+2023-07-24 03:16:51,854 INFO o.a.j.JMeter: Max memory     =1073741824
+2023-07-24 03:16:51,854 INFO o.a.j.JMeter: Available Processors =16
+2023-07-24 03:16:51,868 INFO o.a.j.JMeter: Default Locale=English (EN)
+2023-07-24 03:16:51,868 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2023-07-24 03:16:51,868 INFO o.a.j.JMeter: JMeterHome=C:\Users\israe\OneDrive\Escritorio\mingeso PEP 3 - 2023\mingeso pep 3 work\Mingeso-pep3--1-2023\apache-jmeter-5.6.2
+2023-07-24 03:16:51,868 INFO o.a.j.JMeter: user.dir  =C:\Users\israe\OneDrive\Escritorio\mingeso PEP 3 - 2023\mingeso pep 3 work\Mingeso-pep3--1-2023\apache-jmeter-5.6.2\bin
+2023-07-24 03:16:51,869 INFO o.a.j.JMeter: PWD       =C:\Users\israe\OneDrive\Escritorio\mingeso PEP 3 - 2023\mingeso pep 3 work\Mingeso-pep3--1-2023\apache-jmeter-5.6.2\bin
+2023-07-24 03:16:51,881 INFO o.a.j.JMeter: IP: 192.168.1.96 Name: LAPTOP-6DBVABAD FullName: host.docker.internal
+2023-07-24 03:16:51,898 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2023-07-24 03:16:52,164 INFO o.a.j.JMeterGuiLauncher: Setting LAF to: com.github.weisj.darklaf.DarkLaf:com.github.weisj.darklaf.theme.DarculaTheme
+2023-07-24 03:17:21,569 INFO o.a.j.s.FileServer: Default base='C:\Users\israe\OneDrive\Escritorio\mingeso PEP 3 - 2023\mingeso pep 3 work\Mingeso-pep3--1-2023\apache-jmeter-5.6.2\bin'
+2023-07-24 03:19:36,633 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2023-07-24 03:19:36,634 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2023-07-24 03:19:36,634 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2023-07-24 03:19:36,634 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2023-07-24 03:19:36,634 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2023-07-24 03:19:36,634 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
